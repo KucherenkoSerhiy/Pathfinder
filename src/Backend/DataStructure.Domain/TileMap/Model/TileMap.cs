@@ -7,6 +7,5 @@
     public abstract class TileMap
     {
         public IEnumerable<Tile> Tiles { get; set; }
-        public TileMapShapeBase ShapeBase { get; set; }
     }
 }
