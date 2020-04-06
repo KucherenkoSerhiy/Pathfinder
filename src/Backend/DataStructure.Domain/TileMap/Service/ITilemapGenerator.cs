@@ -4,7 +4,7 @@
     using Model;
     using Model.Shape;
 
-    public interface ITilemapGenerator
+    public interface ITileMapGenerator
     {
         public EnTileMapShape Type { get; }
         public TileMap Generate(int width, int height = 0);

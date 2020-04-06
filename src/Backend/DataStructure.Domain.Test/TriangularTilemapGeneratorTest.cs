@@ -7,7 +7,7 @@
     using Tile.Model;
     using TileMap.Model;
     using TileMap.Model.Shape;
-    using TileMap.Service.Implementation.TilemapGenerator;
+    using TileMap.Service.Implementation.TileMapGenerator;
 
     [TestFixture]
     public class TriangularTileMapGeneratorTest
@@ -29,7 +29,7 @@
             /___\
         */
         [Test]
-        public void Generate_Size1_Generates1Node()
+        public void Generate_Size1_Generates1Tile()
         {
             // Arrange
             var sut = this.GetSut();
@@ -52,7 +52,7 @@
             /___\ /___\
         */
         [Test]
-        public void Generate_Size2_Generates4ConnectedNodes()
+        public void Generate_Size2_Generates4ConnectedTiles()
         {
             // Arrange
             var sut = this.GetSut();
@@ -78,7 +78,7 @@
             /___\ /___\ /___\
         */
         [Test]
-        public void Generate_Size3_Generates9ConnectedNodes()
+        public void Generate_Size3_Generates9ConnectedTiles()
         {
             // Arrange
             var sut = this.GetSut();
@@ -108,7 +108,7 @@
             /___\ /___\ /___\ /___\
         */
         [Test]
-        public void Generate_Size4_Generates16ConnectedNodes()
+        public void Generate_Size4_Generates16ConnectedTiles()
         {
             // Arrange
             var sut = this.GetSut();
@@ -122,9 +122,9 @@
             actual.Should().BeEquivalentTo(expected);
         }
 
-        private TriangularTilemapGenerator GetSut()
+        private TriangularTileMapGenerator GetSut()
         {
-            return new TriangularTilemapGenerator();
+            return new TriangularTileMapGenerator();
         }
 
         /*
