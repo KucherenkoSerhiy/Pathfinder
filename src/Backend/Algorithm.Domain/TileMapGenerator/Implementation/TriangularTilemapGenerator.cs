@@ -1,16 +1,18 @@
-﻿namespace DataStructure.Domain.TileMap.Service.Implementation.TileMapGenerator
+﻿namespace Algorithm.Domain.TileMapGenerator.Implementation
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Model;
-    using Model.Shape;
-    using Tile.Model;
+    using DataStructure.Domain.Tile.Model;
+    using DataStructure.Domain.TileMap.Model;
+    using DataStructure.Domain.TileMap.Model.Shape;
+    using TileMapGenerator;
 
     public class TriangularTileMapGenerator: ITileMapGenerator
     {
         public EnTileMapShape Type => EnTileMapShape.Triangular;
 
+        // width = 139 ok, width = 140 test crashes
         public TileMap Generate(int width, int height = 0)
         {
             if (width == 0)
