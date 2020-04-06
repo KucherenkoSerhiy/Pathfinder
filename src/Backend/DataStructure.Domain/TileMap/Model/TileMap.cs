@@ -4,9 +4,9 @@
     using Shape;
     using Tile.Model;
 
-    public abstract class TileMap
+    public class TileMap
     {
+        public EnTileMapShape Shape { get; set; }
         public IEnumerable<Tile> Tiles { get; set; }
-        public TileMapShape Shape { get; set; }
     }
 }
