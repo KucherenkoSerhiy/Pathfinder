@@ -42,15 +42,34 @@
 
         private static void ConnectTiles(List<Tile> tiles)
         {
-            foreach (var tile in tiles)
-            {
-                if (tile.Index == 1)
-                {
-                    tile.Connections.Add(tiles.First(x => x.Index == tile.Index - 1));
-                    tile.Connections.Add(tiles.First(x => x.Index == tile.Index + 1));
-                    tile.Connections.Add(tiles.First(x => x.Index == tile.Index + 2));
-                }
-            }
+            var efficientTiles = tiles.ToDictionary(tile => tile.Index);
+
+            /* Algorithm Description
+               Each node has up to 3 connections: 1 left, 1 right and 1 up or down
+               depending on if that node is represented by triangle downside-up or upside-down
+
+               Which node will be connected depends on which zone is that node placed.
+               Zone is set of nodes of index between (n-1)^2 and n^2
+               
+               Disclaimer: to not ruin the drawing, used hexadecimal count
+
+                                        zone
+                                    n=4, n^2=16
+                                          ^
+                                 zone    /C\
+                             n=3, n^2=8 /___\
+                                  ^     \    ^
+                         zone    /6\     \9 /D\
+                     n=2, n^2=4 /___\     \/___\
+                          ^     \    ^     \    ^
+                 zone    /2\     \4 /7\     \A /E\
+             n=1, n^2=1 /___\     \/___\     \/___\
+                  ^     \    ^     \    ^     \    ^
+                 /0\     \1 /3\     \5 /8\     \B /F\
+                /___\     \/___\     \/___\     \/___\
+            */
+
+            
         }
     }
 }
