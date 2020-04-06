@@ -158,10 +158,10 @@
             var t3 = new Tile{Index = 3};
 
             // Connections
-            t0.Connections.Add(t1);
-            t1.Connections.AddRange(new [] {t0, t2, t3});
-            t2.Connections.Add(t1);
-            t3.Connections.Add(t1);
+            t0.Connections.Add(t1.Index);
+            t1.Connections.AddRange(new [] {t0.Index, t2.Index, t3.Index});
+            t2.Connections.Add(t1.Index);
+            t3.Connections.Add(t1.Index);
 
             var tileMap = new TileMap
             {
@@ -199,15 +199,15 @@
             var t8 = new Tile{Index = 8};
 
             // Connections
-            t0.Connections.Add(t1);
-            t1.Connections.AddRange(new [] {t0, t2, t3});
-            t2.Connections.AddRange(new [] {t1, t4});
-            t3.Connections.AddRange(new [] {t1, t5});
-            t4.Connections.AddRange(new [] {t2, t6, t7});
-            t5.Connections.AddRange(new [] {t3, t7, t8});
-            t6.Connections.Add(t4);
-            t7.Connections.AddRange(new [] {t4, t5});
-            t8.Connections.Add(t5);
+            t0.Connections.Add(t1.Index);
+            t1.Connections.AddRange(new [] {t0.Index, t2.Index, t3.Index});
+            t2.Connections.AddRange(new [] {t1.Index, t4.Index});
+            t3.Connections.AddRange(new [] {t1.Index, t5.Index});
+            t4.Connections.AddRange(new [] {t2.Index, t6.Index, t7.Index});
+            t5.Connections.AddRange(new [] {t3.Index, t7.Index, t8.Index});
+            t6.Connections.Add(t4.Index);
+            t7.Connections.AddRange(new [] {t4.Index, t5.Index});
+            t8.Connections.Add(t5.Index);
 
             var tileMap = new TileMap
             {
@@ -256,22 +256,22 @@
             var tF = new Tile{Index = 15};
 
             // Connections
-            t0.Connections.Add(t1);
-            t1.Connections.AddRange(new [] {t0, t2, t3});
-            t2.Connections.AddRange(new [] {t1, t4});
-            t3.Connections.AddRange(new [] {t1, t5});
-            t4.Connections.AddRange(new [] {t2, t6, t7});
-            t5.Connections.AddRange(new [] {t3, t7, t8});
-            t6.Connections.AddRange(new [] {t4, t9});
-            t7.Connections.AddRange(new [] {t4, t5, tA});
-            t8.Connections.AddRange(new [] {t5, tB});
-            t9.Connections.AddRange(new [] {t6, tC, tD});
-            tA.Connections.AddRange(new [] {t7, tD, tE});
-            tB.Connections.AddRange(new [] {t8, tE, tF});
-            tC.Connections.Add(t9);
-            tD.Connections.AddRange(new [] {t9, tA});
-            tE.Connections.AddRange(new [] {tA, tB});
-            tF.Connections.Add(tB);
+            t0.Connections.Add(t1.Index);
+            t1.Connections.AddRange(new [] {t0.Index, t2.Index, t3.Index});
+            t2.Connections.AddRange(new [] {t1.Index, t4.Index});
+            t3.Connections.AddRange(new [] {t1.Index, t5.Index});
+            t4.Connections.AddRange(new [] {t2.Index, t6.Index, t7.Index});
+            t5.Connections.AddRange(new [] {t3.Index, t7.Index, t8.Index});
+            t6.Connections.AddRange(new [] {t4.Index, t9.Index});
+            t7.Connections.AddRange(new [] {t4.Index, t5.Index, tA.Index});
+            t8.Connections.AddRange(new [] {t5.Index, tB.Index});
+            t9.Connections.AddRange(new [] {t6.Index, tC.Index, tD.Index});
+            tA.Connections.AddRange(new [] {t7.Index, tD.Index, tE.Index});
+            tB.Connections.AddRange(new [] {t8.Index, tE.Index, tF.Index});
+            tC.Connections.Add(t9.Index);
+            tD.Connections.AddRange(new [] {t9.Index, tA.Index});
+            tE.Connections.AddRange(new [] {tA.Index, tB.Index});
+            tF.Connections.Add(tB.Index);
 
             var tileMap = new TileMap
             {

@@ -116,8 +116,8 @@
             var currentTile = tiles[currentTileIndex];
             var nextHorizontalTile = tiles[nextHorizontalTileIndex];
 
-            currentTile.Connections.Add(nextHorizontalTile);
-            nextHorizontalTile.Connections.Add(currentTile);
+            currentTile.Connections.Add(nextHorizontalTile.Index);
+            nextHorizontalTile.Connections.Add(currentTile.Index);
         }
 
         private bool IsTileUpsideDown(int zone, int currentTileIndex)
@@ -140,8 +140,8 @@
             var currentTile = tiles[currentTileIndex];
             var nextVerticalTile = tiles[nextVerticalTileIndex];
 
-            currentTile.Connections.Add(nextVerticalTile);
-            nextVerticalTile.Connections.Add(currentTile);
+            currentTile.Connections.Add(nextVerticalTile.Index);
+            nextVerticalTile.Connections.Add(currentTile.Index);
         }
     }
 }
