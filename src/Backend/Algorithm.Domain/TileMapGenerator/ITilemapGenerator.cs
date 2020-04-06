@@ -1,8 +1,7 @@
-﻿namespace DataStructure.Domain.TileMap.Service
+﻿namespace Algorithm.Domain.TileMapGenerator
 {
-    using System.Collections.Generic;
-    using Model;
-    using Model.Shape;
+    using DataStructure.Domain.TileMap.Model;
+    using DataStructure.Domain.TileMap.Model.Shape;
 
     public interface ITileMapGenerator
     {

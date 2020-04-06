@@ -8,4 +8,8 @@
     <Folder Include="Pathfinder\Implementation\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructure.Domain\DataStructure.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

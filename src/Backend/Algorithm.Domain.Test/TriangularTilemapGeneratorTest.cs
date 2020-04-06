@@ -1,13 +1,13 @@
-﻿namespace DataStructure.Domain.Test
+﻿namespace Algorithm.Domain.Test
 {
+    using NUnit.Framework;
     using System;
     using System.Collections.Generic;
+    using DataStructure.Domain.Tile.Model;
+    using DataStructure.Domain.TileMap.Model;
+    using DataStructure.Domain.TileMap.Model.Shape;
     using FluentAssertions;
-    using NUnit.Framework;
-    using Tile.Model;
-    using TileMap.Model;
-    using TileMap.Model.Shape;
-    using TileMap.Service.Implementation.TileMapGenerator;
+    using TileMapGenerator.Implementation;
 
     [TestFixture]
     public class TriangularTileMapGeneratorTest
