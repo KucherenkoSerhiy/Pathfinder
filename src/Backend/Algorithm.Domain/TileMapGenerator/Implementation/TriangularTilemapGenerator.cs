@@ -12,16 +12,18 @@
     {
         public EnTileMapShape Type => EnTileMapShape.Triangular;
 
-        // width = 139 ok, width = 140 test crashes
+        // TODO: width = 139 ok, width = 140 test crashes
         public TileMap Generate(int width, int height = 0)
         {
-            if (width == 0)
+            if (width <= 0)
                 throw new ArgumentOutOfRangeException($"Width cannot be {width}, must be > 0");
 
             return new TileMap
             {
                 Shape = EnTileMapShape.Triangular,
-                Tiles = this.GenerateTiles(width)
+                Tiles = this.GenerateTiles(width),
+                Width = width,
+                Height = 0
             };
         }
 

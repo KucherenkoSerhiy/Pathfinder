@@ -10,6 +10,7 @@
     using TileMapGenerator.Implementation;
 
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     public class TriangularTileMapGeneratorTest
     {
         [Test]
@@ -137,7 +138,9 @@
             return new TileMap
             {
                 Shape = EnTileMapShape.Triangular,
-                Tiles = new List<Tile>{ new Tile{Index = 0} }
+                Tiles = new List<Tile>{ new Tile{Index = 0} },
+                Width = 0,
+                Height = 0
             };
         }
 
@@ -169,7 +172,9 @@
                 Tiles = new List<Tile>
                 {
                     t0, t1, t2, t3
-                }
+                },
+                Width = 2,
+                Height = 0
             };
             return tileMap;
         }
@@ -215,7 +220,9 @@
                 Tiles = new List<Tile>
                 {
                     t0, t1, t2, t3, t4, t5, t6, t7, t8
-                }
+                },
+                Width = 3,
+                Height = 0
             };
             return tileMap;
         }
@@ -279,7 +286,9 @@
                 Tiles = new List<Tile>
                 {
                     t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, tA, tB, tC, tD, tE, tF
-                }
+                },
+                Width = 4,
+                Height = 0
             };
             return tileMap;
         }
