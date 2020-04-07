@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Algorithm.Domain.TileMapGenerator.Implementation
 {
+    using DataStructure.Domain.Tile.Model;
     using DataStructure.Domain.TileMap.Model;
     using DataStructure.Domain.TileMap.Model.Shape;
 
@@ -23,10 +24,22 @@ namespace Algorithm.Domain.TileMapGenerator.Implementation
             return new TileMap
             {
                 Shape = EnTileMapShape.Triangular,
-                Tiles = this.GenerateTiles(width),
+                Tiles = this.GenerateTiles(width, height),
                 Width = width,
                 Height = height
             };
+        }
+
+        private IEnumerable<Tile> GenerateTiles(int width, int height)
+        {
+            var tiles = new List<Tile>();
+
+            for (var i = 0; i < width*height; i++)
+                tiles.Add(new Tile(i));
+
+            // TODO: Connections
+
+            return tiles;
         }
     }
 }

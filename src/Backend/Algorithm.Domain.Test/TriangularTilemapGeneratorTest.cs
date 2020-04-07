@@ -138,7 +138,7 @@
             return new TileMap
             {
                 Shape = EnTileMapShape.Triangular,
-                Tiles = new List<Tile>{ new Tile{Index = 0} },
+                Tiles = new List<Tile>{ new Tile(0) },
                 Width = 0,
                 Height = 0
             };
@@ -155,10 +155,10 @@
         private TileMap GenerateSize2TileMap()
         {
             // Tiles
-            var t0 = new Tile{Index = 0};
-            var t1 = new Tile{Index = 1};
-            var t2 = new Tile{Index = 2};
-            var t3 = new Tile{Index = 3};
+            var t0 = new Tile(0);
+            var t1 = new Tile(1);
+            var t2 = new Tile(2);
+            var t3 = new Tile(3);
 
             // Connections
             t0.Connections.Add(t1.Index);
@@ -193,15 +193,15 @@
         private TileMap GenerateSize3TileMap()
         {
             // Tiles
-            var t0 = new Tile{Index = 0};
-            var t1 = new Tile{Index = 1};
-            var t2 = new Tile{Index = 2};
-            var t3 = new Tile{Index = 3};
-            var t4 = new Tile{Index = 4};
-            var t5 = new Tile{Index = 5};
-            var t6 = new Tile{Index = 6};
-            var t7 = new Tile{Index = 7};
-            var t8 = new Tile{Index = 8};
+            var t0 = new Tile(0);
+            var t1 = new Tile(1);
+            var t2 = new Tile(2);
+            var t3 = new Tile(3);
+            var t4 = new Tile(4);
+            var t5 = new Tile(5);
+            var t6 = new Tile(6);
+            var t7 = new Tile(7);
+            var t8 = new Tile(8);
 
             // Connections
             t0.Connections.Add(t1.Index);
@@ -245,22 +245,22 @@
         private TileMap GenerateSize4TileMap()
         {
             // Tiles
-            var t0 = new Tile{Index = 0};
-            var t1 = new Tile{Index = 1};
-            var t2 = new Tile{Index = 2};
-            var t3 = new Tile{Index = 3};
-            var t4 = new Tile{Index = 4};
-            var t5 = new Tile{Index = 5};
-            var t6 = new Tile{Index = 6};
-            var t7 = new Tile{Index = 7};
-            var t8 = new Tile{Index = 8};
-            var t9 = new Tile{Index = 9};
-            var tA = new Tile{Index = 10};
-            var tB = new Tile{Index = 11};
-            var tC = new Tile{Index = 12};
-            var tD = new Tile{Index = 13};
-            var tE = new Tile{Index = 14};
-            var tF = new Tile{Index = 15};
+            var t0 = new Tile(0);
+            var t1 = new Tile(1);
+            var t2 = new Tile(2);
+            var t3 = new Tile(3);
+            var t4 = new Tile(4);
+            var t5 = new Tile(5);
+            var t6 = new Tile(6);
+            var t7 = new Tile(7);
+            var t8 = new Tile(8);
+            var t9 = new Tile(9);
+            var tA = new Tile(10);
+            var tB = new Tile(11);
+            var tC = new Tile(12);
+            var tD = new Tile(13);
+            var tE = new Tile(14);
+            var tF = new Tile(15);
 
             // Connections
             t0.Connections.Add(t1.Index);

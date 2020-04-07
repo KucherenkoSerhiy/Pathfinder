@@ -41,7 +41,7 @@
         {
             var numberOfTiles = Math.Pow(width, 2);
             for (var i = 0; i < numberOfTiles; i++)
-                tiles.Add(new Tile {Index = i});
+                tiles.Add(new Tile(i));
         }
 
         private void LinkTiles(List<Tile> tiles)

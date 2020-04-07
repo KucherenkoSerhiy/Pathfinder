@@ -77,18 +77,18 @@
         */
         private TileMap Generate4x3TileMap()
         {
-            var t00 = new Tile{Index = 0};
-            var t01 = new Tile{Index = 1};
-            var t02 = new Tile{Index = 2};
-            var t03 = new Tile{Index = 3};
-            var t10 = new Tile{Index = 4};
-            var t11 = new Tile{Index = 5};
-            var t12 = new Tile{Index = 6};
-            var t13 = new Tile{Index = 7};
-            var t20 = new Tile{Index = 8};
-            var t21 = new Tile{Index = 9};
-            var t22 = new Tile{Index = 10};
-            var t23 = new Tile{Index = 11};
+            var t00 = new Tile(0);
+            var t01 = new Tile(1);
+            var t02 = new Tile(2);
+            var t03 = new Tile(3);
+            var t10 = new Tile(4);
+            var t11 = new Tile(5);
+            var t12 = new Tile(6);
+            var t13 = new Tile(7);
+            var t20 = new Tile(8);
+            var t21 = new Tile(9);
+            var t22 = new Tile(10);
+            var t23 = new Tile(11);
 
             // row 0 connections
             t00.Connections.AddRange(new []{t01.Index, t10.Index});
@@ -131,16 +131,16 @@
         */
         private TileMap Generate2x5TileMap()
         {
-            var t00 = new Tile{Index = 0};
-            var t01 = new Tile{Index = 1};
-            var t10 = new Tile{Index = 2};
-            var t11 = new Tile{Index = 3};
-            var t20 = new Tile{Index = 4};
-            var t21 = new Tile{Index = 5};
-            var t30 = new Tile{Index = 6};
-            var t31 = new Tile{Index = 7};
-            var t40 = new Tile{Index = 8};
-            var t41 = new Tile{Index = 9};
+            var t00 = new Tile(0);
+            var t01 = new Tile(1);
+            var t10 = new Tile(2);
+            var t11 = new Tile(3);
+            var t20 = new Tile(4);
+            var t21 = new Tile(5);
+            var t30 = new Tile(6);
+            var t31 = new Tile(7);
+            var t40 = new Tile(8);
+            var t41 = new Tile(9);
 
             // row 0 connections
             t00.Connections.AddRange(new []{t01.Index, t10.Index});
