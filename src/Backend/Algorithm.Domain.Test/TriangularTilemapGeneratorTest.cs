@@ -139,7 +139,7 @@
             {
                 Shape = EnTileMapShape.Triangular,
                 Tiles = new List<Tile>{ new Tile(0) },
-                Width = 0,
+                Width = 1,
                 Height = 0
             };
         }
