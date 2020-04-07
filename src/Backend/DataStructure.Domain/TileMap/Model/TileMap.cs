@@ -8,5 +8,7 @@
     {
         public EnTileMapShape Shape { get; set; }
         public IEnumerable<Tile> Tiles { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
     }
 }
